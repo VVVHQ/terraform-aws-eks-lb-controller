@@ -26,6 +26,7 @@ data "aws_iam_policy_document" "lb_controller" {
   statement {
     actions = [
       "ec2:DescribeAccountAttributes",
+      "elasticloadbalancing:AddTags",
       "ec2:DescribeAddresses",
       "ec2:DescribeAvailabilityZones",
       "ec2:DescribeInternetGateways",
